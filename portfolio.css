@@ -144,7 +144,11 @@ label:focus-within {
 }
 
 #navtoggle {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
 }
 header.site {
   position: sticky;
@@ -248,6 +252,8 @@ body:has(#darkmode:checked) .dm-switch::after {
 .burger {
   display: none;
   cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
 }
 .burger span,
 .burger span::before,
@@ -271,8 +277,11 @@ body:has(#darkmode:checked) .dm-switch::after {
 
 @media (max-width: 760px) {
   nav.links {
-    position: fixed;
-    inset: 64px 0 auto 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 101;
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
@@ -295,6 +304,19 @@ body:has(#darkmode:checked) .dm-switch::after {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+  }
+  #navtoggle:focus-visible + header.site .burger {
+    outline: 3px solid var(--mint);
+    outline-offset: 3px;
+  }
+  #navtoggle:checked + header.site .burger span {
+    background: transparent;
+  }
+  #navtoggle:checked + header.site .burger span::before {
+    transform: translateY(7px) rotate(45deg);
+  }
+  #navtoggle:checked + header.site .burger span::after {
+    transform: translateY(-7px) rotate(-45deg);
   }
   .burger {
     display: block;
@@ -688,7 +710,6 @@ section {
 .card-links a:hover {
   text-decoration: underline;
 }
-
 
 #f-all:checked ~ .proj-grid .card {
   display: block;
