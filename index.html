@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miere Joseph. Developpeur web</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Aller au contenu principal</a>
+    <input type="checkbox" id="darkmode" />
+    <input type="checkbox" id="navtoggle" />
+
+    <header class="site">
+      <div class="nav-row">
+        <a href="#hero" class="brand">Joseph<em>.</em>Miere</a>
+        <nav class="links" id="main-nav" aria-label="Navigation principale">
+          <a href="#about">À propos</a>
+          <a href="#skills">Compétences</a>
+          <a href="#projects">Projets</a>
+          <a href="#experience">Expérience</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="toggle-wrap">
+          <label class="dm-label" for="darkmode">
+            <span class="dm-switch" aria-hidden="true"></span> Mode sombre
+          </label>
+          <label
+            class="burger"
+            for="navtoggle"
+            aria-label="Ouvrir le menu"
+            aria-controls="main-nav"
+          >
+            <span></span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Développeure fullstack créatif</p>
+            <h1>
+              Je conçois des interfaces qui racontent
+              <span class="accent">une histoire</span>.
+            </h1>
+            <p class="sub">
+              Basée à Brazzaville, je suis un étudiant en 2 annéee de genie
+              informatique, au sein de ENIA passionné par l'informatique et le
+              developpement web, je suis en formation pour le developpement web
+              fullstack chez Akieni academy, je suis à la recherche d'une
+              opportunité pour mettre mes compétences en pratique et contribuer
+              à des projets passionnants.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-solid">Voir mes projets</a>
+              <a href="#contact" class="btn btn-ghost">Me contacter</a>
+            </div>
+          </div>
+          <figure class="polaroid reveal">
+            <div class="tape" aria-hidden="true"></div>
+            <img src="joseph.jpg" alt="Photo de profil" class="profile-image" />
+            <figcaption>Joseph Miere</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">Qui suis-je</p>
+            <h2>Du papier à l'écran, sans perdre le geste.</h2>
+          </div>
+          <div class="reveal">
+            <p>
+              Je m'appelle Joseph, développeur fullstack. J'ai commencé par la
+              patisserie avant de bifurquer vers le code — une transition qui
+              explique mon attrait pour les détails et les mises en page qui
+              respirent.
+            </p>
+
+            <div class="about-facts">
+              <div class="fact"><b>3+ Mois</b><span>De formation</span></div>
+              <div class="fact"><b>10+</b><span>Projets livrés</span></div>
+              <div class="fact">
+                <b>2 année</b><span>Genie Informatique</span>
+              </div>
+
+              <div class="fact"><b>3</b><span>Langues parlées</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Compétences</p>
+            <h2>Mes domaines de competences actuels</h2>
+            <p>
+              Je suis un développeur web fullstack passionné par la création
+              d'expériences utilisateur exceptionnelles. Je suis constamment à
+              la recherche de nouvelles technologies et de nouvelles façons de
+              résoudre les problèmes. Je suis également un apprenant rapide et
+              je m'efforce toujours d'améliorer mes compétences.
+            </p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-group reveal">
+              <h3>Frontend</h3>
+              <ul class="skill-list">
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>JavaScript</span></li>
+              </ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Informatique bureautique</h3>
+              <ul class="skill-list">
+                <li><span>Word</span></li>
+                <li><span>Excel</span></li>
+                <li><span>PowerPoint</span></li>
+                <li><span>Publisher</span></li>
+              </ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Backend</h3>
+              <ul class="skill-list">
+                <li><span>Express.js</span></li>
+                <li><span>Node.js</span></li>
+                <li><span>MySQL</span></li>
+                <li><span>PostgreSQL</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Projets</p>
+            <h2>Mes projets</h2>
+            <p>
+              Une sélection de réalisations qui mêlent utilité, simplicité et
+              envie d'apprendre.
+            </p>
+          </div>
+          <div class="project-list">
+            <article class="project-card reveal">
+              <span class="project-number">01</span>
+              <div>
+                <p class="project-type">Application web</p>
+                <h3>Agricoop Connect</h3>
+                <p>
+                  Une plateforme pensée pour faciliter les échanges et la
+                  coordination dans le secteur agricole.
+                </p>
+                <div class="tags"></div>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/valpedro59/s8-hacktiviti-agricoop"
+                target="_blank"
+                rel="noreferrer"
+                >Voir le projet <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="project-card reveal">
+              <span class="project-number">02</span>
+              <div>
+                <p class="project-type">Mini-jeu</p>
+                <h3>Blague aléatoire</h3>
+                <p>
+                  Une petite expérience interactive qui affiche une blague
+                  différente à chaque action.
+                </p>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/mierejoseph-maker/Blagues-al-atoire"
+                target="_blank"
+                rel="noreferrer"
+                >Voir le projet <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="project-card reveal">
+              <span class="project-number">03</span>
+              <div>
+                <p class="project-type">Outil de gestion</p>
+                <h3>Gestionnaire de budget</h3>
+                <p>
+                  Un outil simple pour suivre ses dépenses et garder une vision
+                  claire de son budget.
+                </p>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/mierejoseph-maker/Gestionnaire-de-budges"
+                target="_blank"
+                rel="noreferrer"
+                >Voir le projet <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience" id="experience">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Expérience</p>
+            <h2>Le parcours, dans l'ordre.</h2>
+          </div>
+          <div class="timeline">
+            <div class="tl-item reveal">
+              <span class="tl-date">Juillet 2026 — Aujourd'hui</span>
+              <h3>Développeur junior</h3>
+              <p class="role">Developpeur</p>
+              <p class="desc">
+                Je fait mes premiers pas dans le developpement web et je fait
+                mes premieres experience mon apprentissage n'est pas encore
+                terminer, mais je sûr d'apprendre encore plus et devenir
+                beaucoup plus experimenter encore
+              </p>
+            </div>
+            <div class="tl-item reveal">
+              <span class="tl-date">2025 — Aujourd'hui</span>
+              <h3>Etudiant en genie informatique</h3>
+              <p class="role">Genie informatique</p>
+              <p class="desc">
+                Je suis actuellement en 2 annéee de genie informatique à ENIA
+                Brazzaville, je suis passionné par l'informatique et le
+                developpement web, je suis en formation pour le developpement
+                web fullstack chez Akieni academy.
+              </p>
+            </div>
+            <div class="tl-item reveal">
+              <span class="tl-date">2024 — 2025</span>
+              <h3>Informatique bureautique</h3>
+              <p class="role">bureautique</p>
+              <p class="desc">
+                J'apprend l'informatique bureautique et j'apprend les logiciel
+                office World, Excel...
+              </p>
+            </div>
+            <div class="tl-item reveal">
+              <span class="tl-date">2023 — 2024</span>
+              <h3>Patissier</h3>
+              <p class="role">commit</p>
+              <p class="desc">
+                patissier amateur je fait mes debut en patisserie j'apprend la
+                patisserie et j'obtient mon certificat
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Blog</p>
+            <h2>Notes d'atelier.</h2>
+            <p>
+              Quelques réflexions sur le développement fullstack et le design.
+            </p>
+          </div>
+          <div class="blog-grid">
+            <article class="blog-card reveal">
+              <h3>un bon developpeur</h3>
+              <p>
+                Le meilleur développeur n'est pas celui qui écrit le plus de
+                code, mais celui qui resout le problème avec la solution la plus
+                simple
+              </p>
+            </article>
+            <article class="blog-card reveal">
+              <h3>Les erreurs de développement</h3>
+              <p>
+                Les erreurs sont inévitables dans le développement, mais elles
+                sont aussi des opportunités d'apprentissage.
+              </p>
+            </article>
+            <article class="blog-card reveal">
+              <h3>Ce que le bug m'a appris du web</h3>
+              <p>
+                Chaque bug est une occation d'ameliorer sa façon de concevoir et
+                de développer
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Discutons de votre projet.</h2>
+            <form
+              class="contact-form"
+              action="https://formsubmit.co/miereonkajoseph@gmail.com"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nouveau message depuis mon portfolio"
+              />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="true" />
+              <input
+                type="text"
+                name="_honey"
+                tabindex="-1"
+                autocomplete="off"
+                hidden
+              />
+              <div class="field">
+                <label for="name">Nom</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  placeholder="vous@exemple.com"
+                />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-solid contact-submit">
+                Envoyer le message
+              </button>
+              <p
+                class="form-status"
+                id="contact-status"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+          <div class="contact-side reveal">
+            <h3 class="contact-title">Autres façons de me joindre</h3>
+            <div class="contact-links">
+              <a href="mailto:miereonkajoseph@gmail.com"
+                >miereonkajoseph@gmail.com</a
+              >
+              <a href="https://github.com/mierejoseph-maker"
+                >github.com/mierejoseph-maker</a
+              >
+              <a href="https://www.linkedin.com/in/josephmiereonka"
+                >linkedin.com/in/josephmiereonka</a
+              >
+            </div>
+            <div class="newsletter">
+              <div>
+                <h3>Newsletter</h3>
+                <p>
+                  Une note occasionnelle sur mes projets et mes notes d'atelier.
+                </p>
+              </div>
+              <form class="newsletter-form" action="#" method="POST">
+                <label for="newsletter-email" class="sr-only"
+                  >Adresse email</label
+                >
+                <input
+                  type="email"
+                  id="newsletter-email"
+                  name="newsletter-email"
+                  placeholder="Votre mail"
+                  required
+                />
+                <button type="submit" class="btn btn-solid">S'inscrire</button>
+                <p
+                  class="form-status"
+                  id="newsletter-status"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-row">
+        <span class="footer-note"
+          >© 2026 Miere Joseph. Conçu et codé à Brazzaville.</span
+        >
+        <div class="socials">
+          <a href="https://github.com/mierejoseph-maker" aria-label="GitHub">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.4c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C7.5 2.9 6.4 3.2 6.4 3.2a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 5 9.6c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/josephmiereonka"
+            aria-label="LinkedIn"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <line x1="8" y1="11" x2="8" y2="16" />
+              <line x1="8" y1="8" x2="8" y2="8" />
+              <path d="M12 16v-3a2 2 0 0 1 4 0v3" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter / X">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <path d="M4 4l16 16M20 4L4 20" />
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/miereonkajoseph?utm_source=qr&igsh=b2ozZGs2NzBvNGx6"
+            aria-label="Instagram"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.3" cy="6.7" r="1" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="portfolio.js" defer></script>
+  </body>
+</html>
